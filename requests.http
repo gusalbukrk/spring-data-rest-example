@@ -1,0 +1,36 @@
+GET http://localhost:8081/api
+
+###
+
+GET http://localhost:8081/api/users
+
+###
+
+GET http://localhost:8081/api/users?page=0&size=1&sort=name
+
+###
+
+POST http://localhost:8081/api/users
+Content-Type: application/json
+
+{
+  "name": "John",
+  "email": "john@gmail.com"
+}
+
+###
+
+PATCH http://localhost:8081/api/users/3
+Content-Type: application/json
+
+{
+  "name": "Jonathan"
+}
+
+###
+
+GET http://localhost:8081/api/users/3
+
+###
+
+DELETE http://localhost:8081/api/users/1
